@@ -16,6 +16,7 @@
 		626CAE172410F561000E0CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626CAE162410F561000E0CA6 /* Assets.xcassets */; };
 		626CAE1A2410F561000E0CA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 626CAE192410F561000E0CA6 /* Preview Assets.xcassets */; };
 		626CAE1D2410F562000E0CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 626CAE1B2410F561000E0CA6 /* LaunchScreen.storyboard */; };
+		626CAE232410F6FA000E0CA6 /* SwiftyLibKareem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626CAE222410F6FA000E0CA6 /* SwiftyLibKareem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		626CAE192410F561000E0CA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		626CAE1C2410F561000E0CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		626CAE1E2410F562000E0CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626CAE222410F6FA000E0CA6 /* SwiftyLibKareem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibKareem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				626CADF32410F056000E0CA6 /* SwiftyLibKareem.h */,
 				626CADF42410F056000E0CA6 /* Info.plist */,
+				626CAE222410F6FA000E0CA6 /* SwiftyLibKareem.swift */,
 			);
 			path = SwiftyLibKareem;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					626CADEF2410F056000E0CA6 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					626CADF82410F056000E0CA6 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626CAE232410F6FA000E0CA6 /* SwiftyLibKareem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		626CAE052410F056000E0CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TestingToken.SwiftyLibKareem;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		626CAE062410F056000E0CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +491,7 @@
 		626CAE082410F056000E0CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibKareemTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		626CAE092410F056000E0CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibKareemTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
